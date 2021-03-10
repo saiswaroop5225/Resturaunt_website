@@ -1,0 +1,172 @@
+body{
+  background-color: #FFFFFF;
+
+}
+a {
+  float: left;
+  padding-top:20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 16px;
+  font-size: 30px;
+  color:white;
+  background-color: black;
+  position: relative;
+  margin:0px;
+  left:;
+  width: 260px;
+  margin-top: 0px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+a:hover{
+  color:black;
+  background-color: #AE8648;
+}
+#f{
+  padding: 5px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  padding-right: 5px;
+  padding-right: 5px;
+  width:70px;
+  height: 39px;
+  position: relative;
+  text-align: left;
+  index:3;
+
+
+}
+#cont{
+  float: left;
+  padding-top:20px;
+  padding-bottom: 20px;
+  padding-right: 35px;
+  padding-left: 30px;
+  font-size: 30px;
+  color:white;
+  background-color: black;
+  position: relative;
+  margin:0px;
+  width: 260px;
+  margin-top: 0px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+
+}
+img{
+  width: 60px;
+  height:60px;
+  right:px;
+  float:left;
+  position: relative;
+  top:-10px;
+
+
+}
+#cont:hover{
+  color:black;
+  background-color: #AE8648;
+
+}
+
+#rerto:hover{
+  background-color: black;
+  color:white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow, 0 0 20px yellow, 0 0 25px yellow, 0 0 30px yellow, 0 0 35px yellow;
+  }
+
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+  }
+}
+#About{
+  top:10px;
+  width:1890px ;
+  height: 600px;
+  position:relative;
+}
+h1{
+  text-align: center;
+}
+#st{
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+#sc{
+  top:10px;
+  width:1890px ;
+  height: 400px;
+  position:relative;
+}
+#f:hover{
+  background-color: black;
+}
+#s1{
+  font-family: 'Cute Font', cursive;
+  font-size: 60px;
+}
+#s2{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 30px;
+}
+#video{
+  width:750px;
+  height: 450px;
+  position: relative;
+  left: 30%;
+
+}
+#p1{
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+#p2{
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+#s3{
+  font-family: 'Cute Font', cursive;
+  font-size: 60px;
+
+
+}
+#s4{
+    font-family: 'Roboto Mono', monospace;
+}
+h2,h3,h4,h5,h6{
+  text-align: center;
+}
+#ig{
+  width:1890px;
+  height: 350px;
+}
+#i109{
+width:600px;
+height: 150px;
+position: relative;
+left:650px;
+
+
+}
+footer{
+  background-color:#1F1F1F;
+  width: 100%;
+  height: 100px;
+  margin: 0px;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 30px;
+  position: relative;
+  bottom:-200px;
+}

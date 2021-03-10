@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Retro Foods</title>
+	<link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="rerto.jpg">
+<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style12.css">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="script.js"></script>
+<!-- ***********************************THIS IS FOR THE NAVIGATION BAR******************************
+************************************************************************************************
+************************************************************************************************-->
+<style type="text/css">
+	@import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  width: auto;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+}
+#cssmenu > ul {
+  background: #3db2e1;
+}
+#cssmenu > ul > li {
+  float: left;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 26px 20px;
+  font-size: 18px;
+  padding-right:60px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #3db2e1;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#cssmenu > ul > li.active > a {
+  color: #dff2fa;
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #dff2fa;
+  -webkit-transform: rotateX(90deg) translateY(-23px);
+  -moz-transform: rotateX(90deg) translateY(-23px);
+  transform: rotateX(90deg) translateY(-23px);
+  -ms-transform: none;
+}
+#cssmenu > ul > li > a::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 16px 20px;
+  color: #dff2fa;
+  background: #19799f;
+  content: attr(data-title);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -ms-transform: translateY(- -18px);
+}
+#cssmenu > ul > li:hover > a::before,
+#cssmenu > ul > li > a:hover::before {
+  background: #3db2e1;
+}
+#cssmenu.small-screen {
+  width: 100%;
+}
+#cssmenu.small-screen > ul,
+#cssmenu.small-screen.align-center > ul {
+  width: 100%;
+  text-align: left;
+}
+#cssmenu.small-screen > ul > li,
+#cssmenu.small-screen.align-center {
+  float: none;
+  display: block;
+  border-top: 1px solid rgba(100, 100, 100, 0.1);
+}
+#cssmenu.small-screen > ul > li:hover > a,
+#cssmenu.small-screen > ul > li > a:hover {
+  color: #dff2fa;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  -ms-transform: none;
+}
+#cssmenu.small-screen > ul > li > a::before {
+  display: none;
+}
+#cssmenu.small-screen #menu-button {
+  display: block;
+  padding: 16px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #3db2e1;
+}
+#cssmenu.small-screen #menu-button:after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  width: 22px;
+  height: 3px;
+}
+#cssmenu.small-screen #menu-button.menu-opened:after {
+  border-top: 2px solid #dff2fa;
+  border-bottom: 2px solid #dff2fa;
+}
+#cssmenu.small-screen #menu-button:before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 27px;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+}
+#cssmenu.small-screen #menu-button.menu-opened:before {
+  background: #dff2fa;
+}
+
+</style>
+
+</head>
+<body id="body" >
+  <!-- ********************************THE NAV BAR MODULESSS..***************************'
+  ***********************************************************************************' -->
+
+<div id='cssmenu'>
+<ul>
+   <li class='active' id="home"><a href='restaurant.html'>Home</a></li>
+   <li><a href='about.html'id="about">About</a></li>
+      <li><a href='menu.html'>Menu</a></li>
+   <li><a href='cheifs.html'>Chiefs</a></li>
+  <li><a href='gallery.html'>Gallery</a></li>
+  <li><a href='menu.html'>Cuisine</a></li>
+  <li><a href='reserving.html'>Reserving</a></li>
+   <li><a href='reserving.html'>HomeDelivery</a></li>
+   <li><a href='contact.html'>ContactUs</a></li>
+   <li><a href='rateus.html'>RateUs</a></li>
+    <li><a href="contact.html">Help</a></li>
+</ul>
+</div>
+<br>
+<h1>RETRO FOODS</h1>
+<!-- *****************************************THIS IS FOR FEEDBACK TOOGLE ICON**************************
+**************************************************************************************************** -->
+<br>
+<div id="feedback-main">
+  <div id="feedback-div">
+    <form  class="form" id="feedback-form1" name="form1" enctype="multipart/form-data">
+
+      <p class="name">
+        <input name="name" type="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" required placeholder="Name" id="feedback-name" />
+      </p>
+
+      <p class="email">
+        <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="feedback-email" placeholder="Email" required />
+      </p>
+
+      <p class="text">
+        <textarea name="comment" type="comment" class="validate[required,length[6,300]] feedback-input" id="feedback-comment" required placeholder="Hey, I really love the site but I believe that you could incorporate some ..... and also get rid of the ...... on the section."></textarea>
+      </p>
+
+      <div class="feedback-submit">
+        <input type="submit" value="SEND" id="feedback-button-blue" />
+        <div class="feedback-ease"></div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<button id="popup" class="feedback-button" onclick="toggle_visibility()">Feedback</button>
+<br>
+<div class="para" >
+	<p class="pg1" ><strong>WELCOME TO OUR NEW ERA...
+<strong></p>
+</div>
+<div id="osp" ><p>Our Specialities...</p></div>
+
+<div class="qua">
+<a href="#">Top chiefs</a>
+<br>
+<a href="#">Good Atmosphere</a>
+<br>
+<a href="#">Feel good music</a>
+<br>
+<a href="#">multi cuisines</a>
+<br>
+<a href="#">Parties</a>
+<br>
+<a href="#">Meetings</a>
+<br>
+<a href="#">Veg</a>
+<br>
+<a href="#">Non-Veg</a>
+<br>
+
+
+</div>
+<div class="offers" >
+  <h2 id="so">Special Offers</h2>
+
+</div>
+
+
+
+
+<div class="dod" >
+
+  <p id="heading" >Dish Of The Day ! </p>
+<div class="container">
+  <img class="fimg" src="artesanal-pizza-cheese-close-up-1566837 (1).jpg">
+  <img class="fimg" src="asparagus-barbecue-bbq-675951.jpg">
+  <img class="fimg" src="background-basil-cafe-1435907.jpg">
+  <img class="fimg" src="baked-beer-cheese-724216.jpg" >
+  <img class="fimg" src="arch-bridge-asian-food-billiard-table-1098599.jpg">
+  <img class="fimg" src="baking-cheese-cooking-315755.jpg">
+  <button class="display-left" onclick="plusDivs(-1)" color="white" >&#10094;</button>
+  <button class="display-right" onclick="plusDivs(1)" color="white">&#10095;</button>
+</div>
+
+
+</div>
+<div class="off" >
+    <p class="of" >10% OFF</p>
+  <p class="of">20% OFF</p>
+  <p class="of">30% OFF</p>
+  <p class="of">Gift Vouchers</p>
+    <p class="of">Free Dinners</p>
+      <p class="of">Lucky Draw</p>
+</div>
+<!-- *****************************************THIS IS FOR js of feedback ICON**************************
+**************************************************************************************************** -->
+
+
+
+<script src="_include/js/feedback.js"></script>
+
+<script type="text/javascript" src="java.js"></script>
+<script type="text/javascript">
+	    function toggle_visibility() {
+       var e = document.getElementById('feedback-main');
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+
+    }
+    document.getElementById('feedback-main').onclick=function(){
+    	document.getElementById('body').style.display="block";
+    }
+
+
+
+</script>
+<script type="text/javascript">
+  document.getElementById('home').onclick=function(){
+    alert("Are you sure to move on");
+  }
+	document.getElementById('about').onclick=function(){
+		alert("Are you sure to move on");
+	}
+</script>
+
+<!-- /********************************this javascript for slide show of pictures**************************************************/ -->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("fimg");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>

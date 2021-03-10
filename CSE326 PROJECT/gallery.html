@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Cute+Font" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  	<link rel="stylesheet" href="gallery.css">
+  	<link rel="shortcut icon" type="image/x-icon" href="rerto.jpg">
+    <title>Gallery</title>
+  </head>
+  <body>
+    <div class="nav">
+  		<a href="restaurant.html" id="rerto">Retro foods</a>
+  		<a href="restaurant.html">Home</a>
+  		<a href="menu.html">Menu</a>
+  		<a href="reserving.html">Delivery</a>
+  		<a href="rateus.html">Rate us</a>
+  		<a href="contact.html" id="cont">Contact us</a>
+  				<a href="https://www.facebook.com"id="f"><img src="fb.png"></a>
+  	</div>
+    <h1><ins>GALLERY</ins></h1>
+    <div class="container">
+  <img class="fimg" src="asparagus-barbecue-bbq-675951.jpg" >
+  <img class="fimg" src="background-basil-cafe-1435907.jpg" >
+  <img class="fimg" src="baked-beer-cheese-724216.jpg" >
+  <img class="fimg" src="baking-cheese-cooking-315755.jpg">
+  <img class="fimg" src="barbecue-beef-cooking-1251208.jpg">
+<img class="fimg" src="biriyani-chicken-cooked-1624487.jpg" >
+<img class="fimg" src="back5.jpg">
+<img class="fimg" src="back3.jpg" >
+<img class="fimg" src="bar.jpg" >
+
+  <button class="Display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="Display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+    <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("fimg");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
+  <div>
+  <footer><marquee>&trade; This company was copyrighted since 1998.</marquee></footer>
+  </div>
+  </body>
+</html>
